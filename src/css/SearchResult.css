@@ -1,0 +1,258 @@
+.searchPage__header {
+  display: flex;
+  /* border-bottom: 1px solid lightgray; */
+}
+
+.searchPage__logo {
+  object-fit: contain;
+  width: 150px;
+  height: 50px;
+  margin-right: 38px !important;
+}
+.search_page_logo_font{
+  font-size: 40px;
+    margin: 0px;
+    color: #4285f4;
+}
+.search_page_logo_font{
+  text-decoration: none !important;
+}
+.news_content{
+      display: flex;
+  align-items: center;
+    justify-content: center;
+/* height: 80vh; */
+}
+.content_info{
+  position: absolute;
+  top:50%;
+  min-width: 300px;
+  font-size: 300%;
+}
+.search_result_parent{
+width: 100%;
+display: flex;
+}
+.search_result_list{
+  width: 70%;
+}
+.search_result_more{
+width: 30%;
+}
+
+.searchPage__headerbody > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
+  min-width: 650px;
+}
+
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+
+.searchPage__options a,
+.searchPage__optionsRight a {
+  text-decoration: none;
+  /* color: gray; */
+}
+
+.searchPage__optionsLeft,
+.searchPage__optionsRight {
+  display: flex;
+  width: 100%;
+}
+
+.searchPage__optionsRight {
+  margin-left: 80px;
+}
+
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchPage__option a {
+  margin-left: 5px;
+}
+.searchPage__option a:focus {
+  /* margin-left: 5px; */
+  border-bottom: 1px solid red;
+}
+
+.searchPage__results {
+  margin: 40px 0;
+}
+
+.searchPage__resultCount {
+  margin-left: 200px;
+  color: #70757a;
+  font-size: 14px;
+  text-align: left;
+}
+.searchPage__resultLink {
+  text-decoration: none;
+  display: flex;
+}
+.searchPage__results {
+  max-width: 650px;
+  min-width: none;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.searchPage__results_list {
+  max-width: 650px;
+  margin-top: 20px;
+
+  margin-bottom: 40px;
+}
+h2 {
+  margin: 0;
+}
+
+.searchPage__resultImage {
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.searchPage__resultName {
+  text-decoration: none;
+}
+
+
+.searchPage__resultName > .searchPage__resultLink {
+  font-size: 110%;
+  margin-bottom: -0.05em;
+  color: #222;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.searchPage__resultName > .searchPage__resultTitle {
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.1px;
+  margin-bottom: -0.05em;
+  font-size: 130%;
+  color: #1A0DAB;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+.tab-content{
+  font-size: 84%;
+  width: 100%;
+}
+.searchPage__resultSnippet {
+  margin-top: 10px;
+  color: #494949;
+  line-height: 1.45;
+}
+
+.tab-list {
+  /* border-bottom: 1px solid #ccc; */
+  padding-left: 0;
+  border-bottom: 1px solid rgb(163, 162, 162);
+  margin-top: 0px;
+  padding-left: 200px;
+  display: flex;
+  /* width: 100%; */
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  padding-top: 0px;
+}
+.tabs {
+  width: 100%;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid rgb(122, 122, 122);
+  border-width: 0px 0px 2px 0px;
+}
+.home__headerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  height: 50px;
+  margin-left: 100px;
+  justify-content: space-between;
+}
+.home__header {
+  /* display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center; */
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.home__headerRight a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.images_container{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.search_result_area{
+  display: flex;
+  justify-content: space-between;
+}
+.extra_info_area{
+  /* background-color: red; */
+  min-width: 400px;  
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .tab-list {
+    padding-left: 10px;
+  }
+  .searchPage__results {
+    margin-left: 10px;
+  }
+  .searchPage__headerbody > .search > .search__input {
+    min-width: 250px;
+  }
+  .searchPage {
+    width: 200%;
+  }
+  .searchPage__resultCount{
+    margin-left: 10px;
+  }
+}

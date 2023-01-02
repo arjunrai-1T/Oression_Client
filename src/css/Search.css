@@ -1,0 +1,95 @@
+.search__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 660px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
+    padding-left: 10px;
+}
+
+.search__input>input {
+    flex: 1;
+    font-size: medium;
+    border: none;
+    height: 2.545455em;
+    padding-right: 7px;
+}
+
+.search__input>input:focus {
+    outline-width: 0;
+}
+
+.search__inputIcon {
+    color: gray;
+}
+
+.search__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 3.145455em;
+    border: none !important;
+    border-radius: 0px 4px 4px 0px !important;
+    min-width: 26px  !important;
+    background-color: white;
+}
+.cross__buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 3.145455em;
+    border: none !important;
+    /* border-radius: 0px 4px 4px 0px !important; */
+    border-radius: 0px !important;
+    min-width: 26px  !important;
+    background-color: white;
+    color: rgba(255, 255, 255, 0) !important;
+}
+.search_enter{
+    display: none;
+}
+.search__buttons button {
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid white;
+    text-transform: inherit;
+    color: #5f6368;
+    width: 160px !important;
+}
+
+.search__buttons button:hover {
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+.search__buttonsHidden{
+    display: none !important;
+    margin: 0;
+}
+.search_button_container:hover >.search__buttons{
+    background-color: rgb(43 187 43) !important;
+    color: white;
+}
+/* .search__buttons:hover , .cross__buttons:hover{
+    background-color: rgb(43 187 43) !important;
+    color: white;
+} */
+.search_button_container:hover >.cross__buttons{
+    color:rgb(104, 104, 104) !important;
+}
+
+
+
+@media (max-width: 767px) and (min-width: 590px) {
+
+}

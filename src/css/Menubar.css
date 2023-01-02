@@ -1,0 +1,17 @@
+.home__headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    height: 50px;
+    margin-left: 100px;
+    justify-content: space-between;
+  }
+  .home__headerRight a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+  }
+  .home__headerRight > .MuiSvgIcon-root {
+    margin-right: 20px;
+  }

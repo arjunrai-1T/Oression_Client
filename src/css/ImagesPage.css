@@ -1,0 +1,42 @@
+.imagesPage__logo{
+object-fit: contain;
+  width: -webkit-fill-available;
+  /* min-width: auto; */
+  height: 150px;
+  margin-right: 20px;
+  position: relative;
+}
+.image_div{
+    height: 150px;
+        min-width: 100px;
+    max-width: 200px;
+    color: #222;
+    /* padding: 5px; */
+        height: 210px;
+}
+.tile_img_sub{
+line-height: 1;
+    text-align: left;
+    margin-top: 5px;
+    display: block;
+    color: #222;
+    /* padding: 5px; */
+}
+.tile_img_title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 5px 0 2px;
+    height: 1.05em;
+}
+.tile_img_domain{
+height: 1em;
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}

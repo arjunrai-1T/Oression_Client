@@ -1,0 +1,88 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    padding-top: 15px !important;
+}
+
+.home__header a{
+    margin-right: 20px;
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+.home__header a:hover{
+    text-decoration: underline;
+}
+
+.home__headerRight{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.home__body{
+    flex:1;
+    display: flex;
+    margin-top: calc(100vh - 85vh);
+    flex-direction: column;
+}
+.version_details{
+    width: 75vw;
+    margin: auto;
+    max-width: 570px;
+}
+.version_details_container{
+width: 100%;
+}
+
+
+.home__body > img {
+    object-fit: contain;
+    height: 100px;
+}
+
+.logo_font{
+    font-size:  70px;
+    margin: 0px;
+    color: #4285f4;
+}
+.link__subtitle{
+    margin: 0 auto;
+    padding: 0;
+    max-width: none;
+    color: #4c57b8;
+    --font-size:  1.25em;
+    font-size:  1.05em;
+    line-height: 28px;
+    font-weight: normal;
+}
+.link__subtitle:hover{
+    text-decoration: underline;
+}
+.logo_font_sub{
+    --font-size:  1.25em;
+    font-size:  1.05em;
+    line-height: 44px;
+    margin: 0px;
+    color: #555554;
+    --font-weight: 600;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.home__inputContainer{
+    padding-bottom: 20px;
+}
