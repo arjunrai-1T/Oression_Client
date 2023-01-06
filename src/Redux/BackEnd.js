@@ -1,29 +1,23 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getSearchResultReducer, checkReducer,setSearchStr } from './reducer';
+import React                  from 'react';
+import axios                  from 'axios';
+import {FETCH_SEARCH_RESULT}  from "./Actions";
 
-export default function BackEnd()
-{
-          const dispatch = useDispatch();
-         /*
-          var searchURL  = "https://www.gigablast.com/search?q="+props.searchstr+"&userid=511&code=2015200272&format=json";
-          var encodedURL = encodeURI(searchURL);
-          console.log("[callSearchApi()] Search String: "+encodedURL);
-          await fetch(searchURL)
-            .then(res => res.json())
-            .then(
-              (result) => {
-                  console.log( result );
-                  //++dispatch( getSearchResultReducer(result) );
-                  return result;
-              },//++(result)
-              (error)  => {
-                  console.log("[callSearchApi()] Error: " + error);
-                  return -1;
-              }//++(error)
-            );//++then end
-          */      
-}
+export const getOressionSearchResults= async (dispatch, getState)=> {
+  const state = getState();
+  console.log("[callSearchApi()] oression State: "+state.oression);
+  var searchURL  = "https://www.gigablast.com/search?q="+state.oression.search_query+"&userid=511&code=2015200272&format=json";
+  var encodedURL = encodeURI(searchURL);
+  console.log("[callSearchApi()] Search String: "+encodedURL);
+  await axios.get(searchURL)
+  .then(function (response) {
+    console.log("[callSearchApi()] Query Response: ",response);
+    dispatch(FETCH_SEARCH_RESULT.set({type: "SUCCESS_SEARCH_RESULT",payload: response }));
+  })
+  .catch(function (error) {
+    console.log("[callSearchApi()] Query Response Found Error",error);
+    dispatch(FETCH_SEARCH_RESULT.set({type: "ERROR_SEARCH_RESULT",payload: error }));
+  })
+};
 
 /*
 class BackEnd  

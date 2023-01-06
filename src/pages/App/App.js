@@ -1,26 +1,33 @@
 
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import SearchResultPage from "../Result/SearchResult";
-import Home from "../Home/Home";
-import "../../css/App.css";
+import React                                      from "react";
+import { BrowserRouter, Routes, Route }           from "react-router-dom";
+import SearchResultPage                           from "../Result/SearchResult";
+import Home                                       from "../Home/Home";
+import                                            "../../css/App.css";
 
-function App() 
-{
+import {getOressionSearchResults}                 from "../../Redux/BackEnd";
+import { useSelector, useDispatch }               from 'react-redux';
+
+function App(props) {
+  
+  let dispatch=useDispatch();
+
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/search">
-            <SearchResultPage/>
-          </Route>
-          <Route path="/">
-             <Home/> 
-          </Route>
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          
+          <Route path="/search" element={<SearchResultPage/>} loader={async ({request,params }) => {
+                console.log("[App] SearchResultPage Page data loaded before rendering");
+          }} />
+
+          <Route path="/" element={<Home/>}  loader={({params}) => {
+                console.log("[App] Home Page data loaded before rendering")
+          }} />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}//++function App() end
-
+}
 export default App;

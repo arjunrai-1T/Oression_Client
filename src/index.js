@@ -1,14 +1,14 @@
-import React    from 'react';
-import ReactDOM from 'react-dom';
+import React           from 'react';
+import ReactDOM        from 'react-dom';
+import { Provider }    from 'react-redux';
+import * as dotenv     from 'dotenv';
+import App             from './pages/App/App';
+import oressionStore   from './Redux/Store';
 
-import App          from './pages/App/App';
-import store        from './Redux/Store';
-import { Provider } from 'react-redux';
-import './css/index.css';
-
+dotenv.config();
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={oressionStore}>
       <App/>
     </Provider>,
   </React.StrictMode>,
