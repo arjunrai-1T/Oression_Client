@@ -2,12 +2,12 @@ import React                        from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 import Search                       from "./Search";
-import Menubar                      from "../Components/Menubar";
-import                              "../../css/Home.css";
+import Menubar                      from "../../components/Menubar";
+import                              "../../assets/css/Home.css";
 
 import { useLocation,useNavigate,Link  }  from "react-router-dom";
-import {FETCH_SEARCH_RESULT}              from "../../Redux/Actions";
-import {getOressionSearchResults}         from "../../Redux/BackEnd";
+import {FETCH_SEARCH_RESULT}              from "../../redux/actions/Actions";
+import {getOressionSearchResults}         from "../../services/BackEnd";
 
 const Home=(props)=> {
   

@@ -1,5 +1,5 @@
 import React from "react";
-import  "../../css/ImagesPage.css";
+import  "../assets/css/ImagesPage.css";
 
 function ImagesPage() {
   console.log("sdad")

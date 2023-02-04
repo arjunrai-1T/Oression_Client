@@ -3,9 +3,9 @@ import React                                      from "react";
 import { BrowserRouter, Routes, Route }           from "react-router-dom";
 import SearchResultPage                           from "../Result/SearchResult";
 import Home                                       from "../Home/Home";
-import                                            "../../css/App.css";
+import                                            "../../assets/css/App.css";
 
-import {getOressionSearchResults}                 from "../../Redux/BackEnd";
+import {getOressionSearchResults}                 from "../../services/BackEnd";
 import { useSelector, useDispatch }               from 'react-redux';
 
 function App(props) {

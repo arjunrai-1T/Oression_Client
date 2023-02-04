@@ -1,7 +1,7 @@
 import   React, { useState }                from "react";
 import { Button }                           from "@material-ui/core";
 import                                      "@fortawesome/fontawesome-free/css/all.min.css";
-import                                      "../../css/Search.css";
+import                                      "../../assets/css/Search.css";
 
 /*
 class Search extends React.Component {

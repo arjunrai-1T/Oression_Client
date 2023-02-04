@@ -3,7 +3,7 @@ import ReactDOM        from 'react-dom';
 import { Provider }    from 'react-redux';
 import * as dotenv     from 'dotenv';
 import App             from './pages/App/App';
-import oressionStore   from './Redux/Store';
+import oressionStore   from '././redux/store/Store';
 
 dotenv.config();
 ReactDOM.render(

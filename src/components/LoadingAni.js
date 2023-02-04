@@ -1,6 +1,6 @@
 
 import React, { Component } from "react";
-import "../../css/LoadingAni.css";
+import "../assets/css/LoadingAni.css";
 
 class LoadingAni extends Component {
   render() {

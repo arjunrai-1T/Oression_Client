@@ -1,6 +1,6 @@
 import React                  from 'react';
 import axios                  from 'axios';
-import {FETCH_SEARCH_RESULT}  from "./Actions";
+import {FETCH_SEARCH_RESULT}  from "../redux/actions/Actions";
 
 export const getOressionSearchResults= async (dispatch, getState)=> {
   const state = getState();

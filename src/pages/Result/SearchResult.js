@@ -1,15 +1,15 @@
 import React ,{useState,useEffect} from "react";
 import { Link,useLocation }        from "react-router-dom";
 import { useSelector,useDispatch } from "react-redux";
-import {FETCH_SEARCH_RESULT}       from "../../Redux/Actions";
-import {getOressionSearchResults}  from "../../Redux/BackEnd";
+import {FETCH_SEARCH_RESULT}       from "../../redux/actions/Actions";
+import {getOressionSearchResults}  from "../../services/BackEnd";
 
 import Search                      from "../Home/Search";
-import ImagesPage                  from "../Components//ImagesPage";
-import LoadingAni                  from '../Components/LoadingAni';
-import Menubar                     from "../Components/Menubar";
-import Tabs                        from "../Components/Tab";
-import                             "../../css/SearchResult.css";
+import ImagesPage                  from "../../components/ImagesPage";
+import LoadingAni                  from '../../components/LoadingAni';
+import Menubar                     from "../../components/Menubar";
+import Tabs                        from "../../components/Tab";
+import                             "../../assets/css/SearchResult.css";
 
 const SearchResult =(props)=>{
 
@@ -40,6 +40,7 @@ const SearchResult =(props)=>{
 
     return (
         <div className="searchPage">
+
                 <div className="home__header">
                   <div className="searchPage__header">
                     <Link to="/" className="searchPage__logo">
@@ -56,6 +57,7 @@ const SearchResult =(props)=>{
                 <div className="searchPage__options">
                   <div className="searchPage__optionsLeft">
                     <Tabs>
+
                       <a label="All" to="/all">
                         <p className="searchPage__resultCount">
                           About {state?.search_result?.data?.results?.length} results (
@@ -67,8 +69,7 @@ const SearchResult =(props)=>{
                 
                             { state?.status==200 && 
                               state?.search_result?.data?.results?.map((element, index) =>{
-                                  //return <p>{JSON.stringify(element) }</p>
-                                  
+                                //return <p>{JSON.stringify(element) }</p>
                               })
                             }
 
@@ -97,9 +98,11 @@ const SearchResult =(props)=>{
                       <a label="maps">
                         <LoadingAni />
                       </a> */}
+
                     </Tabs>
                   </div>
                 </div>
+                
         </div>
     );
 }

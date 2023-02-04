@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
-import "../../css/SearchResult.css";
+import "../assets/css/SearchResult.css";
 
 class Menubar extends Component {
   render() {
